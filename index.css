@@ -1,0 +1,76 @@
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+body {
+    background-image: url("img/anime.jpg");
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(15px) brightness(40%);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+.logo > img {
+    max-width: 23em;
+
+    margin-left: 3em;
+}
+
+.logo {
+    width: 100vw;
+    margin-top: 5vh;
+    /* background: #555; */
+}
+
+.preorder {
+    font-family: "Bebas Neue";
+    margin-left: 3em;
+    color: #fff;
+    margin-top: 8vh;
+}
+
+.preorder > h1 {
+    margin: 0.2em;
+    width: 10em;
+    font-size: 5vh;
+}
+
+.preorder > h1:hover {
+    cursor: pointer;
+}
+
+.content {
+    width: 100%;
+    overflow: hidden;
+}
+
+.right {
+    float: right;
+    /* background: #777; */
+    width: 50vw;
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    float: left;
+    /* background: #555; */
+    width: 50vw;
+}
+
+iframe {
+    width: 45vw;
+    height: 25.3125vw;
+    margin-left: 6%;
+    margin-right: 6%;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    top: 16%;
+    border-radius: 25px;
+}
