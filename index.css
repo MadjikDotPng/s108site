@@ -13,7 +13,17 @@ body {
     padding: 0;
     overflow: hidden;
     display: flex;
+    animation: background 60s ease-in-out infinite;
+    animation-delay: 2s;
+    /* transition: background-image .3s; */
 }
+
+@keyframes background {
+    0%   {background-image: url("img/anime.jpg");}
+    25%  {background-image: url("img/pink.jpg");}
+    50%  {background-image: url("img/purple.png");}
+    100% {background-image: url("img/poster.png");}
+  }
 
 .logo > img {
     max-width: 23em;
@@ -38,10 +48,13 @@ body {
     margin: 0.2em;
     width: 10em;
     font-size: 5vh;
+    transition: 0.3s;
 }
 
 .preorder > h1:hover {
     cursor: pointer;
+    margin-left: 0.4em;
+    transition: 0.3s;
 }
 
 .content {
@@ -52,7 +65,7 @@ body {
 .right {
     float: right;
     /* background: #777; */
-    width: 50vw;
+    width: 65vw;
     display: flex;
     height: 100vh;
 }
@@ -60,10 +73,10 @@ body {
 .left {
     float: left;
     /* background: #555; */
-    width: 50vw;
+    width: 35vw;
 }
 
-iframe {
+.morph {
     width: 45vw;
     height: 25.3125vw;
     margin-left: 6%;
@@ -74,3 +87,34 @@ iframe {
     top: 16%;
     border-radius: 25px;
 }
+
+.video {
+    width: 100%;
+    display: block;
+}
+
+.streaming {
+    padding-left: 3.2em;
+}
+
+.streamingicon {
+    color: #fff;
+    width: 3em;
+    height: 3em;
+    margin: 0.1em;
+}
+
+.socials {
+    background-color: #555;
+}
+
+.page {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.hide {
+    display: none;
+}
+

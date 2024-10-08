@@ -9,3 +9,8 @@ function isMobile(){
         return false
    }
 } 
+
+function switchiframe() {
+     document.getElementById('morph').classList.add('hide');
+     document.getElementById('disc').classList.remove('hide');
+}
